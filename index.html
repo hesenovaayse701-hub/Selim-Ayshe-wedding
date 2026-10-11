@@ -35,6 +35,36 @@
 .hero .footer{margin-top:22px;color:#977b5c;font-size:.59rem;letter-spacing:.21em}
 @media(max-width:430px){.hero .hero-inner{padding:24px 15px 24px;border-radius:230px 230px 12px 12px}.couple-names{font-size:clamp(3.8rem,17vw,5.2rem);margin:23px 0 20px}.hero .hero-actions{gap:8px}.hero .btn{padding:12px 15px;font-size:.59rem}.hero .hero-quote{font-size:1.26rem}}
 
+
+/* Richer floral jewel-tone accents across the inner pages */
+:root{--paper:#fffaf5;--blush:#f7e6e2;--rose:#b8757b;--sage:#aab39a;--gold:#bd965d;--ink:#503b3b;--line:#bd965d99}
+.screen.soft{background:radial-gradient(ellipse at 12% 15%,rgba(215,166,174,.34),transparent 36%),radial-gradient(ellipse at 90% 84%,rgba(177,190,164,.34),transparent 38%),linear-gradient(135deg,#fffaf5 0%,#f8e9e4 48%,#fdf7ec 100%)}
+#details{background:radial-gradient(ellipse at 85% 12%,rgba(198,158,105,.25),transparent 34%),radial-gradient(ellipse at 8% 88%,rgba(184,117,123,.20),transparent 35%),linear-gradient(145deg,#fff9f2,#f4e1df 58%,#f8f0e4)}
+#style{background:radial-gradient(ellipse at 8% 12%,rgba(171,187,159,.38),transparent 35%),radial-gradient(ellipse at 92% 88%,rgba(194,151,111,.27),transparent 38%),linear-gradient(135deg,#f8f6ed,#f2e4dc 54%,#fff8f0)!important}
+#count{background:radial-gradient(ellipse at 88% 15%,rgba(183,132,140,.29),transparent 34%),radial-gradient(ellipse at 12% 85%,rgba(193,166,112,.30),transparent 38%),linear-gradient(145deg,#fdf7ef,#f2e2e0 58%,#f5f0e5)!important}
+.screen:not(.hero) h2{font-family:'Bodoni Moda','Cormorant Garamond',serif;font-weight:400;letter-spacing:.015em;color:#69464a;text-shadow:0 2px 20px rgba(180,128,126,.12)}
+.screen:not(.hero) h2 .script{color:#b4777d;text-shadow:0 3px 14px rgba(183,119,125,.17)}
+.screen:not(.hero) .eyebrow{color:#9b7748;letter-spacing:.22em}
+.screen:not(.hero) p{color:#6e5954;line-height:1.9}
+.info{background:linear-gradient(145deg,rgba(255,255,255,.83),rgba(255,246,240,.68));border:1px solid rgba(189,150,93,.48);border-radius:18px;box-shadow:0 12px 34px rgba(100,65,54,.08);position:relative;overflow:hidden}
+.info:before{content:'✦';position:absolute;right:13px;top:8px;color:#c3a16e;opacity:.65;font-size:.85rem}
+.info span{color:#a16d70;letter-spacing:.17em}
+.info strong{color:#62464a;font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:500}
+.btn{background:linear-gradient(135deg,#a96f76,#c28e82 55%,#c2a16c);border:1px solid #b98c78;color:#fffaf4;box-shadow:0 8px 22px rgba(127,75,76,.17);transition:transform .25s,box-shadow .25s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(127,75,76,.22)}
+.btn.ghost{background:rgba(255,250,245,.7);color:#80555a;border-color:#bd965d;box-shadow:none}
+.field{border:1px solid #c7a58b!important;background:rgba(255,252,248,.86)!important;color:#5b4544!important;border-radius:13px!important;box-shadow:0 4px 14px rgba(112,73,63,.05)}
+.field:focus{outline:2px solid #c18b8a;outline-offset:2px}
+.count{background:linear-gradient(155deg,rgba(255,255,255,.9),rgba(248,229,224,.85));border:1px solid rgba(189,150,93,.55);border-radius:16px;box-shadow:0 12px 28px rgba(104,67,56,.09)}
+.count b{color:#9e666d;font-family:'Cormorant Garamond',serif;font-weight:500}
+.count span{color:#8d715e}
+.rule{background:linear-gradient(90deg,transparent,#bd965d,#bd7d84,transparent)}
+.map{border:1px solid rgba(189,150,93,.6);border-radius:18px;box-shadow:0 12px 28px rgba(104,67,56,.12)}
+.wish{background:linear-gradient(135deg,rgba(255,255,255,.9),rgba(250,232,226,.86));border:1px solid #bd965d66;border-radius:14px;box-shadow:0 7px 20px rgba(104,67,56,.06)}
+.nav a{border-color:#a96f76;background:#d9b7ac;box-shadow:0 0 0 3px rgba(255,250,245,.75)}
+.footer{color:#9b7473}
+@media(max-width:600px){.screen{padding:58px 21px}.info strong{font-size:1.3rem}.screen:before{inset:9px}}
+
 </style></head><body>
 <nav class="nav" aria-label="Səhifələr"><a href="#home" aria-label="Giriş"></a><a href="#details" aria-label="Məlumat"></a><a href="#style" aria-label="Dress code"></a><a href="#wishes" aria-label="Arzular"></a><a href="#count" aria-label="Geri sayım"></a></nav>
 <section class="screen hero" id="home"><div class="inner hero-inner fade">
@@ -43,7 +73,7 @@
   <p class="hero-intro">WE INVITE YOU TO CELEBRATE</p>
   <h1 class="couple-names"><span>Səlim</span><span class="ampersand" aria-hidden="true">♡</span><span>Ayşə</span></h1>
   <div class="rule"></div>
-  <p class="quote hero-quote">“İki qəlb, bir ömür, sonsuz sevgi.”</p>
+  <p class="quote hero-quote">“Our Forever Begins Here.”</p>
   <div class="eyebrow hero-date">29 Noyabr 2026 <span style="padding:0 8px;color:#b79259">·</span> 18:00</div>
   <div class="hero-venue">VEGAS CITY HALL</div>
   <div class="hero-actions"><button class="btn" onclick="document.querySelector('#details').scrollIntoView({behavior:'smooth'})">Dəvətnaməni aç <span aria-hidden="true">↓</span></button><button class="btn ghost" type="button" onclick="shareInvitation()">WhatsApp-da paylaş ♡</button></div>
@@ -51,16 +81,7 @@
 </div></section>
 <section class="screen soft" id="details"><div class="inner fade"><div class="eyebrow">A day to remember</div><h2>Birlikdə yeni<br><span class="script">bir başlanğıc</span></h2><p>Bu gözəl günümüzdə sevincimizi sizinlə bölüşməkdən xoşbəxt olarıq.</p><div class="grid"><div class="info"><span>Date</span><strong>29 November 2026</strong></div><div class="info"><span>Time</span><strong id="timeLabel">6:00 PM</strong></div><div class="info" style="grid-column:1/-1"><span>Venue & address</span><strong>Vegas City Hall</strong><p class="tiny">Nəsrəddin Tusi küçəsi 10C · Xətai rayonu, Bakı</p></div></div><a class="btn ghost" href="#style">Next page ↓</a></div></section>
 <section class="screen" id="style" style="background:linear-gradient(140deg,#fffdf9,#f8e9e3 60%,#fff8f0)"><div class="inner fade"><div class="eyebrow">Dress code & location</div><h2>Soft tones.<br><span class="script">Elegant moments.</span></h2><p>We would love you to join us in elegant, light-toned attire.</p><div class="grid"><div class="info"><span>Dress code</span><strong>Elegant</strong></div><div class="info"><span>Colour palette</span><strong>Light Tones</strong></div></div><iframe class="map" title="Vegas City Hall — Nəsrəddin Tusi küçəsi 10C xəritəsi" loading="lazy" src="https://maps.google.com/maps?q=Vegas%20City%20Hall%2C%20N%C9%99sr%C9%99ddin%20Tusi%20k%C3%BC%C3%A7%C9%99si%2010C%2C%20X%C9%99tai%20rayonu%2C%20Baku%2C%20Azerbaijan&z=16&output=embed"></iframe><a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Vegas+City+Hall%2C+N%C9%99sr%C9%99ddin+Tusi+k%C3%BC%C3%A7%C9%99si+10C%2C+X%C9%99tai+rayonu%2C+Baku">Open in Google Maps ↗</a><p class="tiny">Please check the map pin before sharing the invitation.</p><a class="btn ghost" href="#wishes">Next page ↓</a></div></section>
-<section class="screen" id="promise" style="background:linear-gradient(145deg,#fffaf5,#f1e0d5 58%,#fff8f0)">
-  <div class="inner fade" style="text-align:center">
-   <div class="eyebrow">A promise of forever</div>
-   <h2>Two hearts.<br><span class="script">One lifetime.</span></h2>
-   <p class="quote">“And We created you in pairs.”</p>
-   <p style="font-size:.78rem;letter-spacing:.12em;text-transform:uppercase">Qur’an · An-Naba 78:8</p>
-   <p style="max-width:480px;margin:24px auto">Bir ömür, bir yol, bir sevgi… Bu yeni başlanğıcımızda sevincimizi sizinlə bölüşmək bizim üçün böyük xoşbəxtlikdir.</p>
-   <a class="btn ghost" href="#wishes">Next page ↓</a>
-  </div>
- </section>
+
 <section class="screen soft" id="wishes"><div class="inner fade"><div class="eyebrow">A note from the heart</div><h2>A few words<br><span class="script">from you</span></h2><p>Gözəl arzularınız bu günümüzün ən şirin xatirələrindən biri olsun.</p><form id="wishForm"><input id="wishName" class="field" placeholder="Your name" maxlength="80" required><textarea id="wishText" class="field" placeholder="Arzularınızı burada yazın..." maxlength="600" required></textarea><button class="btn" type="submit">Save your wishes ♡</button><div id="status" class="tiny" role="status"></div></form><div id="wishList"></div><a class="btn ghost" href="#count">Final page ↓</a></div></section>
 <section class="screen" id="count" style="background:linear-gradient(140deg,#fffdf9,#f8e9e3 60%,#fff8f0)"><div class="inner fade"><div class="eyebrow">Counting down to forever</div><h2>Until our day<br><span class="script">together</span></h2><p>Yeni xatirələrə və bir ömürlük “biz”ə...</p><div class="countdown"><div class="count"><b id="days">000</b><span>Days</span></div><div class="count"><b id="hours">00</b><span>Hours</span></div><div class="count"><b id="mins">00</b><span>Minutes</span></div><div class="count"><b id="secs">00</b><span>Seconds</span></div></div><div class="rule"></div><div class="eyebrow">Səlim ♡ Ayşə</div><p class="quote">“Your presence will be the most beautiful gift.”</p><button class="btn ghost" onclick="document.querySelector('#home').scrollIntoView({behavior:'smooth'})">Back to beginning ↑</button><div class="footer">MADE WITH LOVE · 29 NOVEMBER 2026</div></div></section>
 <script>
